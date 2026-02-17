@@ -39,7 +39,7 @@
                 <Button android:id="@+id/btn9" android:text="@string/digit_9"/>
             </GridLayout>
 
-            <!-- Нижние кнопки OPEN / CLOSE -->
+            <!-- Отлигулировка положения кнопок -->
             <LinearLayout
                 android:id="@+id/bottomButtons"
                 android:layout_width="wrap_content"
@@ -52,26 +52,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="ExtraText">
 
-
-                <Button
-                    android:id="@+id/btnOpen"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#00A603"
-                    android:text="@string/open"
-                    android:textColor="@android:color/white" />
-                <Button
-                    android:id="@+id/btnClose"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:text="@string/close"
-                    android:backgroundTint="#FF0000"
-                    android:textColor="@android:color/white"/>
-            </LinearLayout>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    //soi
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

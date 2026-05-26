@@ -23,8 +23,8 @@
 
         <ImageButton
             android:id="@+id/btnLock"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_height="63dp"
             android:background="@android:color/transparent"
             android:contentDescription="Замок"
             android:src="@mipmap/ic_launcher"

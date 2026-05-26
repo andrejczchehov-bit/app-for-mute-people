@@ -2,40 +2,118 @@ package com.example.myapplicatiocalculyator
 
 import android.media.SoundPool
 import android.os.Bundle
-import android.widget.Button
+import android.view.View
+import android.widget.ImageButton
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
+    private var soundsLoaded = false
     private lateinit var soundPool: SoundPool
-    private val sounds = HashMap<Int, Int>()
+
+    private var soundMenu = 0
+    private var soundLock = 0
+
+    // 🔊 звуки 1–11
+    private lateinit var tones: IntArray
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        soundPool = SoundPool.Builder()
-            .setMaxStreams(11)
-            .build()
+        val drawer = findViewById<DrawerLayout>(R.id.drawerLayout)
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        val mainLayout = findViewById<View>(R.id.mainLayout)
+        val sectionText = findViewById<TextView>(R.id.sectionText)
 
-        sounds[R.id.btn1] = soundPool.load(this, R.raw.tone_1, 1)
-        sounds[R.id.btn2] = soundPool.load(this, R.raw.tone_2, 1)
-        sounds[R.id.btn3] = soundPool.load(this, R.raw.tone_3, 1)
-        sounds[R.id.btn4] = soundPool.load(this, R.raw.tone_4, 1)
-        sounds[R.id.btn5] = soundPool.load(this, R.raw.tone_5, 1)
-        sounds[R.id.btn6] = soundPool.load(this, R.raw.tone_6, 1)
-        sounds[R.id.btn7] = soundPool.load(this, R.raw.tone_7, 1)
-        sounds[R.id.btn8] = soundPool.load(this, R.raw.tone_8, 1)
-        sounds[R.id.btn9] = soundPool.load(this, R.raw.tone_9, 1)
+        setSupportActionBar(toolbar)
 
-        sounds[R.id.btnOpen] = soundPool.load(this, R.raw.tone_10, 1)
-        sounds[R.id.btnClose] = soundPool.load(this, R.raw.tone_11, 1)
+        soundPool = SoundPool.Builder().setMaxStreams(12).build()
 
-        sounds.forEach { (buttonId, soundId) ->
-            findViewById<Button>(buttonId).setOnClickListener {
-                soundPool.play(soundId, 1f, 1f, 1, 0, 1f)
+        // 🔊 загружаем меню и замок
+        soundMenu = soundPool.load(this, R.raw.tone_menu, 1)
+        soundLock = soundPool.load(this, R.raw.tone_lock, 1)
+
+        // 🔊 загружаем tone_1 … tone_11
+        tones = intArrayOf(
+            soundPool.load(this, R.raw.tone_1, 1),
+            soundPool.load(this, R.raw.tone_2, 1),
+            soundPool.load(this, R.raw.tone_3, 1),
+            soundPool.load(this, R.raw.tone_4, 1),
+            soundPool.load(this, R.raw.tone_5, 1),
+            soundPool.load(this, R.raw.tone_6, 1),
+            soundPool.load(this, R.raw.tone_7, 1),
+            soundPool.load(this, R.raw.tone_8, 1),
+            soundPool.load(this, R.raw.tone_9, 1),
+            soundPool.load(this, R.raw.tone_10, 1), // OPEN
+            soundPool.load(this, R.raw.tone_11, 1)  // CLOSE
+        )
+
+        soundPool.setOnLoadCompleteListener { _, _, _ ->
+            soundsLoaded = true
+        }
+
+        // 🔊 меню
+        toolbar.setNavigationOnClickListener {
+            if (soundsLoaded) {
+                soundPool.play(soundMenu, 0.3f, 0.3f, 1, 0, 1f)
+            }
+            drawer.openDrawer(GravityCompat.START)
+        }
+
+        // 🔊 замок
+        findViewById<ImageButton>(R.id.btnLock).setOnClickListener {
+            if (soundsLoaded) {
+                soundPool.play(soundLock, 0.3f, 0.3f, 1, 0, 1f)
+            }
+            sectionText.visibility = View.GONE
+            mainLayout.visibility = View.VISIBLE
+        }
+
+        // 🔊 кнопки 1–9
+        val digitButtons = listOf(
+            R.id.btn1, R.id.btn2, R.id.btn3,
+            R.id.btn4, R.id.btn5, R.id.btn6,
+            R.id.btn7, R.id.btn8, R.id.btn9
+        )
+
+        for (i in digitButtons.indices) {
+            findViewById<Button>(digitButtons[i]).setOnClickListener {
+                if (soundsLoaded) {
+                    soundPool.play(tones[i], 1f, 1f, 1, 0, 1f)
+                }
             }
         }
+
+        // 🔊 OPEN (tone_10)
+        findViewById<Button>(R.id.btnOpen).setOnClickListener {
+            if (soundsLoaded) {
+                soundPool.play(tones[9], 1f, 1f, 1, 0, 1f)
+            }
+        }
+
+        // 🔊 CLOSE (tone_11)
+        findViewById<Button>(R.id.btnClose).setOnClickListener {
+            if (soundsLoaded) {
+                soundPool.play(tones[10], 1f, 1f, 1, 0, 1f)
+            }
+        }
+
+        findViewById<NavigationView>(R.id.navigationView)
+            .setNavigationItemSelectedListener {
+                drawer.closeDrawers()
+                sectionText.text = getString(R.string.entered_section, it.title)
+
+                sectionText.visibility = View.VISIBLE
+                mainLayout.visibility = View.GONE
+                true
+            }
     }
 
     override fun onDestroy() {
@@ -43,5 +121,3 @@ class MainActivity : AppCompatActivity() {
         soundPool.release()
     }
 }
-// test
-

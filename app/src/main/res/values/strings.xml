@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">PhoneApp</string>
-    <string name="open">OPEN</string>
-    <string name="close">CLOSE</string>
+    <string name="app_name">Приложение для немых</string>
+    <string name="open">Да</string>
+    <string name="close">Нет</string>
 
     <string name="digit_1">1</string>
     <string name="digit_2">2</string>
@@ -12,6 +12,23 @@
     <string name="digit_7">7</string>
     <string name="digit_8">8</string>
     <string name="digit_9">9</string>
-    <string name="entered_section">Вы вошли в %1$s</string>
+    <string name="lock_default">Фразы по умолчанию</string>
+    <string name="lock_default_text">
+        Фразы по кнопкам:\n
+        \n1.Я не могу говорить
+\n2.Здравствуйте
+\n3.До свидания
+\n4.Спасибо
+\n5.Мне нужен доктор
+\n6.Мне нужна помощь
+\n7.Передайте за проезд
+\n8.Кто последний в очереди
+\n9.Понятно
+
+</string>
+    <string name="lock_group">Список фраз</string>
+    <string name="language">Язык</string>
+    <string name="settings_program">Настройки программы</string>
+    <string name="instruction">Инструкция</string>
 
 </resources>

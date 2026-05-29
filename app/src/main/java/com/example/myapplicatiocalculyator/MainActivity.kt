@@ -11,6 +11,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import android.widget.Button
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
 
@@ -131,11 +132,21 @@ class MainActivity : AppCompatActivity() {
                 drawer.closeDrawers()
 
                 when (it.itemId) {
-                    R.id.p1 -> sectionText.text = getString(R.string.lock_default_text)
-                    R.id.p2 -> sectionText.text = ""
-                    R.id.p3 -> sectionText.text = ""
-                    R.id.p4 -> sectionText.text = ""
-                    R.id.p5 -> sectionText.text = ""
+                    R.id.p1 -> {
+                        startActivity(Intent(this, activity_lock_default::class.java))
+                    }
+                    R.id.p2 -> {
+                        startActivity(Intent(this, ListActivity::class.java))
+                    }
+                    R.id.p3 -> {
+                        startActivity(Intent(this, LanguageActivity::class.java))
+                    }
+                    R.id.p4 -> {
+                        startActivity(Intent(this, SettingsActivity::class.java))
+                    }
+                    R.id.p5 -> {
+                        startActivity(Intent(this, InstructionActivity::class.java))
+                    }
                     else -> sectionText.text = ""
                 }
 

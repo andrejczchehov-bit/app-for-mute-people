@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Приложение для немых</string>
-    <string name="open">Да</string>
-    <string name="close">Нет</string>
+    <string name="app_name">Cyber lock</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 
     <string name="digit_1">1</string>
     <string name="digit_2">2</string>

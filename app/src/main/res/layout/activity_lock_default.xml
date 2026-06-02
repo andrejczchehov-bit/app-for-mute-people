@@ -8,22 +8,13 @@
     android:layout_height="match_parent"
     tools:context=".activity_lock_default">
 
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="1000dp"
+        android:layout_height="10000dp"
         android:padding="16dp"
-        android:text="1. Я не могу говорить\n
-2. Мне нужна помощь\n
-3. Передайте за проезд\n
-4. Кто последний в очереди\n
-5. Мне нужен доктор\n
-6. Здравствуйте\n
-7. До свидания\n
-8. Спасибо\n
-9. Понял\n
-Да — кнопка OPEN\n
-Нет — кнопка CLOSE"
+        android:text="1. Я не могу говорить&#10;&#10;2. Мне нужна помощь&#10;&#10;3. Передайте за проезд&#10;&#10;4. Кто последний в очереди&#10;&#10;5. Мне нужен доктор&#10;&#10;6. Здравствуйте&#10;&#10;7. До свидания&#10;&#10;8. Спасибо&#10;&#10;9. Понял&#10;&#10;Да — кнопка OPEN&#10;&#10;Нет — кнопка CLOSE"
         android:textSize="20sp"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,3 +23,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

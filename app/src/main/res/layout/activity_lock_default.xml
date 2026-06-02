@@ -8,15 +8,27 @@
     android:layout_height="match_parent"
     tools:context=".activity_lock_default">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/screenshot_1773"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:text="1. Я не могу говорить\n
+2. Мне нужна помощь
+3. Передайте за проезд
+4. Кто последний в очереди
+5. Мне нужен доктор
+6. Здравствуйте
+7. До свидания
+8. Спасибо
+9. Понял
+Да — кнопка OPEN
+Нет — кнопка CLOSE"
+        android:textSize="20sp"
 
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />

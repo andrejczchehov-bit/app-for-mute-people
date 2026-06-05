@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myapplicatiocalculyator"
-        minSdk = 21 // Android 5.0+
+        minSdk = 23 // Android 5.0+
         targetSdk = 36
         versionCode = 1
         versionName = "Beta 1.0"

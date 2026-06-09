@@ -17,6 +17,9 @@ class activity_lock_default : AppCompatActivity() {
         // кнопка "назад" в главное меню
         toolbar.setNavigationOnClickListener {
             finish()
+            setSupportActionBar(toolbar)
+
+            supportActionBar?.setDisplayShowTitleEnabled(false)
         }
     }
 }

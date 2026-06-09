@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myapplicatiocalculyator"
-        minSdk = 21 // Android 5.0+
+        minSdk = 23 // Android 5.0+
         targetSdk = 36
         versionCode = 1
         versionName = "Beta 1.0"
@@ -40,6 +40,8 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.mediarouter)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.play.services.maps)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/p1" android:title="@string/lock_default"/>
-    <item android:id="@+id/p2" android:title="@string/lock_group"/>
-    <item android:id="@+id/p3" android:title="@string/language"/>
-    <item android:id="@+id/p4" android:title="@string/settings_program"/>
-    <item android:id="@+id/p5" android:title="@string/instruction"/>
-
+    <item android:id="@+id/p1" android:title="Фразы по умолчанию"/>
+    <item android:id="@+id/p2" android:title="Список фраз"/>
+    <item android:id="@+id/p3" android:title="Язык"/>
+    <item android:id="@+id/p4" android:title="Настройки программы"/>
+    <item android:id="@+id/p5" android:title="Инструкция"/>
 </menu>

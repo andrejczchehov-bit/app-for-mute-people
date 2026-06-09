@@ -8,12 +8,14 @@
     android:layout_height="match_parent"
     tools:context=".activity_lock_default">
 
-    <!-- 🟣 TOOLBAR (перенесён из главного меню) -->
+    <!-- 🟣 TOOLBAR (без Material — чтобы не было ClassCastException) -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#53438A"
+        android:title="Фразы по умолчанию"
+        android:titleTextColor="@android:color/white"
         app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,17 +33,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="68dp"
-        android:layout_height="61dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/_12" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

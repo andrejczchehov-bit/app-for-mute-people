@@ -13,13 +13,13 @@ class activity_lock_default : AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
 
         setSupportActionBar(toolbar)
-
+        supportActionBar?.setDisplayShowTitleEnabled(false)
         // кнопка "назад" в главное меню
         toolbar.setNavigationOnClickListener {
             finish()
             setSupportActionBar(toolbar)
 
-            supportActionBar?.setDisplayShowTitleEnabled(false)
+
         }
     }
 }

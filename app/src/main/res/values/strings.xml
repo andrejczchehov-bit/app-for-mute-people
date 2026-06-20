@@ -20,5 +20,8 @@
     <string name="language">Настройки</string>
     <string name="settings_program">Профиль</string>
     <string name="instruction">Инструкция</string>
+    <string name="myText">Введите имя...</string>
+    <string name="myText2">Дата рождения</string>
+    <string name="myText3">Email:</string>
 
 </resources>

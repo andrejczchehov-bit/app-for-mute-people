@@ -12,23 +12,13 @@
     <string name="digit_7">7</string>
     <string name="digit_8">8</string>
     <string name="digit_9">9</string>
-    <string name="lock_default">Фразы по умолчанию</string>
+    <string name="lock_default">Группа замков</string>
     <string name="lock_default_text">
-        Фразы по кнопкам:\n
-        \n1.Я не могу говорить
-\n2.Здравствуйте
-\n3.До свидания
-\n4.Спасибо
-\n5.Мне нужен доктор
-\n6.Мне нужна помощь
-\n7.Передайте за проезд
-\n8.Кто последний в очереди
-\n9.Понятно
 
 </string>
-    <string name="lock_group">Список фраз</string>
-    <string name="language">Язык</string>
-    <string name="settings_program">Настройки программы</string>
+    <string name="lock_group">Журнал</string>
+    <string name="language">Настройки</string>
+    <string name="settings_program">Профиль</string>
     <string name="instruction">Инструкция</string>
 
 </resources>

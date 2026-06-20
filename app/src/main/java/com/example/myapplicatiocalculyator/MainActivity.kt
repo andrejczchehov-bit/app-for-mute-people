@@ -12,6 +12,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import android.widget.Button
 import android.content.Intent
+import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
 
@@ -103,6 +104,7 @@ class MainActivity : AppCompatActivity() {
             R.id.btn1, R.id.btn2, R.id.btn3,
             R.id.btn4, R.id.btn5, R.id.btn6,
             R.id.btn7, R.id.btn8, R.id.btn9
+
         )
 
         for (i in digitButtons.indices) {

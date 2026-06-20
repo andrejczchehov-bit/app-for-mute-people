@@ -32,6 +32,51 @@
         app:layout_constraintHorizontal_bias="0.0"/>
 
 
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Приложение предназначено\nдля открывания и \nзакрывания электронных\nнавесных замков\nПолная инструкция по ссылке тут\nhttps://elzam.ru\n"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:autoLink="web"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.2" />
+
+
+
+    <TextView
+        android:id="@+id/myTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Изменить код замка можно в меню (Настройки).\nВведите старый и новый код нажмите кнопку"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0."
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/myTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="СОХРАНИТЬ"
+        android:textColor="#F12001"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

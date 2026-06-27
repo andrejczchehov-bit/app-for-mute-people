@@ -23,5 +23,7 @@
     <string name="myText">Введите имя...</string>
     <string name="myText2">Дата рождения</string>
     <string name="myText3">Email:</string>
+    <string name="myText4">Введите номер:</string>
+    <string name="myText5">Введите имя:</string>
 
 </resources>

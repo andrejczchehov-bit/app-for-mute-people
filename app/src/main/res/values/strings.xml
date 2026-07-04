@@ -26,4 +26,12 @@
     <string name="myText4">Введите номер:</string>
     <string name="myText5">Введите имя:</string>
 
+        <string-array name="languages_array">
+            <item>Русский</item>
+            <item>English</item>
+            <item>Deutsch</item>
+            <item>Français</item>
+        </string-array>
+
+
 </resources>

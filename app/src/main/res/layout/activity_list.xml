@@ -8,10 +8,52 @@
     tools:context=".ListActivity">
 
     <TextView
+        android:id="@+id/myTextView21"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:text="clouse"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <TextView
+        android:id="@+id/myTextView20"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:text="clouse"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386" />
+
+    <TextView
+        android:id="@+id/myTextView18"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:text="open"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <TextView
         android:id="@+id/myTextView15"
         android:layout_width="206dp"
         android:layout_height="35dp"
-        android:text="18:33 27.03.2026"
+        android:text="19:15 27.03.2026"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +67,7 @@
         android:id="@+id/myTextView16"
         android:layout_width="206dp"
         android:layout_height="35dp"
-        android:text="18:33 27.03.2026"
+        android:text="19:25 27.03.2026"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,7 +81,7 @@
         android:id="@+id/myTextView14"
         android:layout_width="206dp"
         android:layout_height="35dp"
-        android:text="18:33 27.03.2026"
+        android:text="18:37 27.03.2026"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -118,6 +160,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.251" />
+
+    <TextView
+        android:id="@+id/myTextView19"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:text="open"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
 
     <TextView
         android:id="@+id/myTextView11"

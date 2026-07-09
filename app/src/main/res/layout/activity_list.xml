@@ -444,15 +444,20 @@
         android:id="@+id/button2"
         android:layout_width="134dp"
         android:layout_height="58dp"
-        android:text="Button"
+        android:text="EXPORT"
         tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="659dp" />
+        tools:layout_editor_absoluteY="659dp"
+        android:backgroundTint="#1913CC"
+        android:textColor="@android:color/white"
+        />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="134dp"
         android:layout_height="58dp"
-        android:text="Button"
+        android:text="CLEAR"
+        android:backgroundTint="#BA2634"
+        android:textColor="@android:color/white"
 
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="659dp" />

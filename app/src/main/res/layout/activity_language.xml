@@ -21,20 +21,6 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLock"
         app:layout_constraintVertical_bias="0.324" />
 
-    <TextView
-        android:id="@+id/myTextView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Автообновления\nпрограммы"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.082"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
-
     <Switch
         android:id="@+id/switch8"
         android:layout_width="80dp"
@@ -48,20 +34,6 @@
         app:layout_constraintStart_toEndOf="@+id/myTextView4"
         app:layout_constraintTop_toBottomOf="@+id/btnLock"
         app:layout_constraintVertical_bias="0.212" />
-
-    <TextView
-        android:id="@+id/myTextView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Звук уведомлений"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29" />
 
     <Switch
         android:id="@+id/switch7"
@@ -92,6 +64,34 @@
         app:layout_constraintVertical_bias="0.191" />
 
     <TextView
+        android:id="@+id/myTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Звук уведомлений"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <TextView
+        android:id="@+id/myTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Автообновления\nпрограммы"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
         android:id="@+id/myTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.29" />

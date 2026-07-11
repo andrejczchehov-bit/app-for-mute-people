@@ -58,6 +58,21 @@ class MainActivity : AppCompatActivity() {
         val mainLayout = findViewById<View>(R.id.mainLayout)
         val sectionText = findViewById<TextView>(R.id.sectionText)
 
+        setSupportActionBar(toolbar)
+
+        val toggle = androidx.appcompat.app.ActionBarDrawerToggle(
+            this,
+            drawer,
+            toolbar,
+            R.string.open,
+            R.string.close
+        )
+
+        drawer.addDrawerListener(toggle)
+        toggle.syncState()
+
+        supportActionBar?.title = ""
+
 
 
 

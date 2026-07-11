@@ -174,7 +174,7 @@ class MainActivity : AppCompatActivity() {
                     R.id.p5 -> {
                         startActivity(Intent(this, InstructionActivity::class.java))
                     }
-                    else -> sectionText.text = ""
+
                 }
 
 

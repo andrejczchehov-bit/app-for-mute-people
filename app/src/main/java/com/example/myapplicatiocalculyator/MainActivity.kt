@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
 
 
             setSupportActionBar(toolbar)
-            supportActionBar?.title = ""
+
 
         soundPool = SoundPool.Builder().setMaxStreams(12).build()
 

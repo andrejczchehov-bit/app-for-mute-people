@@ -444,23 +444,30 @@
         android:id="@+id/button2"
         android:layout_width="134dp"
         android:layout_height="58dp"
-        android:text="EXPORT"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="659dp"
         android:backgroundTint="#1913CC"
+        android:text="EXPORT"
         android:textColor="@android:color/white"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="134dp"
         android:layout_height="58dp"
-        android:text="CLEAR"
         android:backgroundTint="#BA2634"
+        android:text="CLEAR"
         android:textColor="@android:color/white"
 
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="659dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 
     />
 

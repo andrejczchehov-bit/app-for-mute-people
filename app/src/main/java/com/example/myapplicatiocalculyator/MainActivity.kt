@@ -178,8 +178,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
 
-                sectionText.visibility = View.VISIBLE
-                mainLayout.visibility = View.GONE
+
 
                 true
             }

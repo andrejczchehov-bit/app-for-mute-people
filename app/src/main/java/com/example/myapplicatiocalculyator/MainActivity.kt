@@ -59,11 +59,9 @@ class MainActivity : AppCompatActivity() {
         val sectionText = findViewById<TextView>(R.id.sectionText)
 
 
-        setContentView(R.layout.activity_main)
 
 
-
-
+            setSupportActionBar(toolbar)
             supportActionBar?.title = ""
 
         soundPool = SoundPool.Builder().setMaxStreams(12).build()

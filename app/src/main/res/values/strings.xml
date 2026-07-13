@@ -25,6 +25,8 @@
     <string name="myText3">Email:</string>
     <string name="myText4">Введите номер:</string>
     <string name="myText5">Введите имя:</string>
+    <string name="myText6">Введите имя:</string>
+    <string name="myText7">Введите имя:</string>
 
         <string-array name="languages_array">
             <item>Русский</item>

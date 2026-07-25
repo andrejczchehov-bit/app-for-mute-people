@@ -143,12 +143,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
 
+    <TextView
+        android:id="@+id/myTextView6"
+        android:layout_width="273dp"
+        android:layout_height="42dp"
+        android:text="Изменить код замка"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="238dp"
         android:layout_height="48dp"
         android:backgroundTint="#BA2634"
-        android:text="CLEAR"
+        android:text="Сохранить"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

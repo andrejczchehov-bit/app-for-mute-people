@@ -7,6 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".LanguageActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#53438A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@android:drawable/ic_menu_sort_by_size" />
+
+    <ImageButton
+        android:id="@+id/btnLock"
+        android:layout_width="60dp"
+        android:layout_height="63dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Замок"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
     <Switch
         android:id="@+id/switch9"
         android:layout_width="80dp"
@@ -120,28 +143,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#53438A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@android:drawable/ic_menu_sort_by_size" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="134dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#BA2634"
+        android:text="CLEAR"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="657dp" />
 
-    <ImageButton
-        android:id="@+id/btnLock"
-        android:layout_width="60dp"
-        android:layout_height="63dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="Замок"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintBottom_toBottomOf="@id/toolbar"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintTop_toTopOf="@id/toolbar"
-        app:layout_constraintVertical_bias="0.0" />
+
 
 
 

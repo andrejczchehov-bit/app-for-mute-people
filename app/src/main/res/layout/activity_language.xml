@@ -192,7 +192,7 @@
         android:layout_width="238dp"
         android:layout_height="48dp"
         android:backgroundTint="#BA2634"
-        android:text="Сохранить"
+        android:text="SAVE"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

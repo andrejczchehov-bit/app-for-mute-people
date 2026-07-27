@@ -25,7 +25,7 @@
         android:layout_width="60dp"
         android:layout_height="63dp"
         android:background="@android:color/transparent"
-        android:text="@string/lock_title"
+        android:text="@string/lock_image_button"
         android:src="@mipmap/ic_launcher"
         app:layout_constraintBottom_toBottomOf="@id/toolbar"
         app:layout_constraintEnd_toEndOf="@+id/toolbar"

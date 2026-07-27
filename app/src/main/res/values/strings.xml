@@ -29,7 +29,7 @@
     <string name="myText7">Введите новый код</string>
     <string name="lock_image_button">Замок</string>
     <string name="first_text_in_insruction">"Приложение предназначено\nдля открывания и \nзакрывания электронных\nнавесных замков\nПолная инструкция по ссылке тут\nhttps://elzam.ru\n"</string>
-
+    <string name="save">SAVE</string>
 
     <string-array name="languages_array">
             <item>Русский</item>

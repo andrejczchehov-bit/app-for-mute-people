@@ -53,7 +53,7 @@
         android:id="@+id/myTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SAVE"
+        android:text="@string/save"
         android:textColor="#F12001"
         android:textSize="24sp"
         android:textStyle="bold"

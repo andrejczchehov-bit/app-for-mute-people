@@ -27,7 +27,7 @@
     <string name="myText5">Введите имя:</string>
     <string name="myText6">Введите старый код:</string>
     <string name="myText7">Введите новый код</string>
-    <string name="lock_title">Замок</string>
+    <string name="lock_image_button">Замок</string>
 
 
     <string-array name="languages_array">

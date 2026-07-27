@@ -27,8 +27,10 @@
     <string name="myText5">Введите имя:</string>
     <string name="myText6">Введите старый код:</string>
     <string name="myText7">Введите новый код</string>
+    <string name="lock_title">Замок</string>
 
-        <string-array name="languages_array">
+
+    <string-array name="languages_array">
             <item>Русский</item>
             <item>English</item>
             <item>Deutsch</item>

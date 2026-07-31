@@ -13,7 +13,8 @@
     <string name="digit_8">8</string>
     <string name="digit_9">9</string>
     <string name="digit_0">0</string>
-
+    <string name="button_DEL">DEL</string>
+    <string name="button_ENT">ENT</string>
     <string name="lock_default">Группа замков</string>
     <string name="lock_default_text">
 

@@ -116,12 +116,24 @@
                         android:layout_width="80dp"
                         android:layout_height="50dp"
                         android:text="@string/digit_9" />
+
                     <Button
                         android:id="@+id/btn9"
                         android:layout_width="80dp"
                         android:layout_height="50dp"
                         android:text="@string/digit_9" />
 
+                    <Button
+                        android:id="@+id/btn9"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:text="@string/digit_9" />
+
+                    <Button
+                        android:id="@+id/btn9"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:text="@string/digit_9" />
                 </GridLayout>
 
 

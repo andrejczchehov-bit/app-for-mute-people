@@ -127,20 +127,7 @@ class MainActivity : AppCompatActivity() {
 
         )
 
-        val editText = findViewById<EditText>(R.id.editText)
 
-        val buttons = listOf(
-            R.id.btn0 to "0", R.id.btn1 to "1", R.id.btn2 to "2",
-            R.id.btn3 to "3", R.id.btn4 to "4", R.id.btn5 to "5",
-            R.id.btn6 to "6", R.id.btn7 to "7", R.id.btn8 to "8",
-            R.id.btn9 to "9"
-        )
-
-        buttons.forEach { (id, digit) ->
-            findViewById<Button>(id).setOnClickListener {
-                editText.append(digit)
-            }
-        }
 
 
 

@@ -127,15 +127,14 @@ class MainActivity : AppCompatActivity() {
 
         )
 
-
-
-
-
         for (i in digitButtons.indices) {
             findViewById<Button>(digitButtons[i]).setOnClickListener {
+
                 if (soundsLoaded) {
                     soundPool.play(tones[i], 1f, 1f, 1, 0, 1f)
                 }
+
+                editTextText.append("${i + 1}")
             }
         }
 

@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        val editTextText = findViewById<EditText>(R.id.editText)
         val drawer = findViewById<DrawerLayout>(R.id.drawerLayout)
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         val mainLayout = findViewById<View>(R.id.mainLayout)
@@ -128,11 +128,20 @@ class MainActivity : AppCompatActivity() {
         )
 
         val editText = findViewById<EditText>(R.id.editText)
-        val btn1 = findViewById<Button>(R.id.btn1) // пример для кнопки "1"
 
-        btn1.setOnClickListener {
-            editText.append("1") // добавляет цифру в конец текста
+        val buttons = listOf(
+            R.id.btn0 to "0", R.id.btn1 to "1", R.id.btn2 to "2",
+            R.id.btn3 to "3", R.id.btn4 to "4", R.id.btn5 to "5",
+            R.id.btn6 to "6", R.id.btn7 to "7", R.id.btn8 to "8",
+            R.id.btn9 to "9"
+        )
+
+        buttons.forEach { (id, digit) ->
+            findViewById<Button>(id).setOnClickListener {
+                editText.append(digit)
+            }
         }
+
 
 
         for (i in digitButtons.indices) {

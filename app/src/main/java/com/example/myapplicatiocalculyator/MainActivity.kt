@@ -132,6 +132,14 @@ class MainActivity : AppCompatActivity() {
 
         )
 
+        val editText = findViewById<EditText>(R.id.editText)
+        val btn1 = findViewById<Button>(R.id.btn1) // пример для кнопки "1"
+
+        btn1.setOnClickListener {
+            editText.append("1") // добавляет цифру в конец текста
+        }
+
+
         for (i in digitButtons.indices) {
             findViewById<Button>(digitButtons[i]).setOnClickListener {
                 if (soundsLoaded) {

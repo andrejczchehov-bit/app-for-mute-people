@@ -54,6 +54,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
         val editTextText = findViewById<EditText>(R.id.editText)
         val drawer = findViewById<DrawerLayout>(R.id.drawerLayout)
         val toolbar = findViewById<Toolbar>(R.id.toolbar)

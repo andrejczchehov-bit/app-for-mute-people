@@ -73,12 +73,7 @@ class MainActivity : AppCompatActivity() {
         drawer.addDrawerListener(toggle)
         toggle.syncState()
 
-        supportActionBar?.title = ""
 
-
-
-
-            setSupportActionBar(toolbar)
 
 
         soundPool = SoundPool.Builder().setMaxStreams(12).build()

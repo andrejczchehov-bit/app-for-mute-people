@@ -62,6 +62,20 @@ class MainActivity : AppCompatActivity() {
         val mainLayout = findViewById<View>(R.id.mainLayout)
         val sectionText = findViewById<TextView>(R.id.sectionText)
 
+        val editText = findViewById<EditText>(R.id.editTextText)
+        val deleteButton = findViewById<Button>(R.id.buttonDelete)
+
+        deleteButton.setOnClickListener {
+            val currentText = editText.text.toString()
+            if (currentText.isNotEmpty()) {
+                // Удаляем последний символ и возвращаем текст в поле
+                editText.setText(currentText.dropLast(1))
+                // Переносим курсор в самый конец текста
+                editText.setSelection(editText.text.length)
+            }
+        }
+
+
         setSupportActionBar(toolbar)
 
         val toggle = androidx.appcompat.app.ActionBarDrawerToggle(

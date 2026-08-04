@@ -62,8 +62,8 @@ class MainActivity : AppCompatActivity() {
         val mainLayout = findViewById<View>(R.id.mainLayout)
         val sectionText = findViewById<TextView>(R.id.sectionText)
 
-        val editText = findViewById<EditText>(R.id.editTextText)
-        val deleteButton = findViewById<Button>(R.id.buttonDelete)
+        val editText = findViewById<EditText>(R.id.editText)
+        val deleteButton = findViewById<Button>(R.id.btnDEL)
 
         deleteButton.setOnClickListener {
             val currentText = editText.text.toString()

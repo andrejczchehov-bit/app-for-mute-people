@@ -169,8 +169,8 @@
 
                 <EditText
                     android:id="@+id/editText"
-                    android:layout_width="72dp"
-                    android:layout_height="46dp"
+                    android:layout_width="265dp"
+                    android:layout_height="48dp"
                     android:ems="10"
                     android:inputType="text"
                     android:maxLength="4"

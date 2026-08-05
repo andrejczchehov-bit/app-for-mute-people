@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     private var soundMenu = 0
     private var soundLock = 0
 
-    // 🔊 звуки 1–11
+    // звуки 1–11
     private lateinit var tones: IntArray
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,6 +65,22 @@ class MainActivity : AppCompatActivity() {
         val editText = findViewById<EditText>(R.id.editText)
         val deleteButton = findViewById<Button>(R.id.btnDEL)
 
+        val rightPassword = "1234"
+        val inputField = findViewById<EditText>(R.id.editText)
+        val checkButton = findViewById<Button>(R.id.btnENT)
+        val layout = findViewById<View>(R.id.mainLayout) // Элемент для смены цвета
+
+        checkButton.setOnClickListener {
+            val userText = inputField.text.toString()
+            if (userText == rightPassword) {
+                layout.setBackgroundColor(color.valueOf(0xffff0000))
+            } else {
+                layout.setBackgroundColor(color.RED)
+            }
+        }
+
+
+
         deleteButton.setOnClickListener {
             val currentText = editText.text.toString()
             if (currentText.isNotEmpty()) {
@@ -94,11 +110,11 @@ class MainActivity : AppCompatActivity() {
 
         soundPool = SoundPool.Builder().setMaxStreams(12).build()
 
-        // 🔊 загружаем меню и замок
+        // загружение звуков меню и замка
         soundMenu = soundPool.load(this, R.raw.tone_menu, 1)
         soundLock = soundPool.load(this, R.raw.tone_lock, 1)
 
-        // 🔊 загружаем tone_1 … tone_11
+        // загружение звуков tone_1 … tone_11
         tones = intArrayOf(
             soundPool.load(this, R.raw.tone_1, 1),
             soundPool.load(this, R.raw.tone_2, 1),
@@ -117,7 +133,7 @@ class MainActivity : AppCompatActivity() {
             soundsLoaded = true
         }
 
-        // 🔊 меню
+        // звук меню
         toolbar.setNavigationOnClickListener {
             if (soundsLoaded) {
                 soundPool.play(soundMenu, 0.3f, 0.3f, 1, 0, 1f)
@@ -125,7 +141,7 @@ class MainActivity : AppCompatActivity() {
             drawer.openDrawer(GravityCompat.START)
         }
 
-        // 🔊 замок
+        // звук замок
         findViewById<ImageButton>(R.id.btnLock).setOnClickListener {
             if (soundsLoaded) {
                 soundPool.play(soundLock, 0.3f, 0.3f, 1, 0, 1f)
@@ -135,7 +151,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        // 🔊 кнопки 1–9
+        // звук кнопки 1–9
         val digitButtons = listOf(
             R.id.btn1, R.id.btn2, R.id.btn3,
             R.id.btn4, R.id.btn5, R.id.btn6,
@@ -154,14 +170,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // 🔊 OPEN (tone_10)
+        // звук OPEN (tone_10)
         findViewById<Button>(R.id.btnOpen).setOnClickListener {
             if (soundsLoaded) {
                 soundPool.play(tones[9], 1f, 1f, 1, 0, 1f)
             }
         }
 
-        // 🔊 CLOSE (tone_11)
+        // звук CLOSE (tone_11)
         findViewById<Button>(R.id.btnClose).setOnClickListener {
             if (soundsLoaded) {
                 soundPool.play(tones[10], 1f, 1f, 1, 0, 1f)

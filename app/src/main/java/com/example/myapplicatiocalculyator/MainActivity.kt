@@ -18,6 +18,9 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import android.graphics.Color
+
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -73,9 +76,9 @@ class MainActivity : AppCompatActivity() {
         checkButton.setOnClickListener {
             val userText = inputField.text.toString()
             if (userText == rightPassword) {
-                layout.setBackgroundColor(color.valueOf(0xffff0000))
+                layout.setBackgroundColor(Color.GREEN)
             } else {
-                layout.setBackgroundColor(color.RED)
+                layout.setBackgroundColor(Color.RED)
             }
         }
 

@@ -75,10 +75,13 @@ class MainActivity : AppCompatActivity() {
 
         checkButton.setOnClickListener {
             val userText = inputField.text.toString()
+
             if (userText == rightPassword) {
-                layout.setBackgroundColor(Color.GREEN)
+                // Окрашивает задний фон текстового поля в зеленый
+                inputField.setBackgroundColor(Color.GREEN)
             } else {
-                layout.setBackgroundColor(Color.RED)
+                // Окрашивает задний фон текстового поля в красный
+                inputField.setBackgroundColor(Color.RED)
             }
         }
 

@@ -131,7 +131,6 @@ class MainActivity : AppCompatActivity() {
             soundPool.load(this, R.raw.tone_7, 1),
             soundPool.load(this, R.raw.tone_8, 1),
             soundPool.load(this, R.raw.tone_9, 1),
-            soundPool.load(this, R.raw.tone_0, 1),
             soundPool.load(this, R.raw.tone_10, 1), // OPEN
             soundPool.load(this, R.raw.tone_11, 1)  // CLOSE
         )
@@ -162,13 +161,12 @@ class MainActivity : AppCompatActivity() {
         val digitButtons = listOf(
             R.id.btn1, R.id.btn2, R.id.btn3,
             R.id.btn4, R.id.btn5, R.id.btn6,
-            R.id.btn7, R.id.btn8, R.id.btn9, R.id.btn0
+            R.id.btn7, R.id.btn8, R.id.btn9
 
         )
 
         for (i in digitButtons.indices) {
             findViewById<Button>(digitButtons[i]).setOnClickListener {
-
 
                 if (soundsLoaded) {
                     soundPool.play(tones[i], 1f, 1f, 1, 0, 1f)

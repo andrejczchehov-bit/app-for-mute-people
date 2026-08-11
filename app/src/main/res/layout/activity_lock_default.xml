@@ -45,7 +45,7 @@
         app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintVertical_bias="0.169" />
 
     <EditText
         android:id="@+id/editTextText2"
@@ -126,8 +126,8 @@
         android:id="@+id/switch1"
         android:layout_width="80dp"
         android:layout_height="60dp"
-        android:scaleX="1.5"
-        android:scaleY="1.5"
+        android:scaleX="1.0"
+        android:scaleY="1.0"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

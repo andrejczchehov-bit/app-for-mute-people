@@ -150,4 +150,121 @@
 
     <!-- Первый замок -->
 
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/myText4"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:scaleX="1.0"
+        android:scaleY="1.0"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toEndOf="@+id/editTextText1"
+        app:layout_constraintTop_toBottomOf="@+id/btnLock"
+        app:layout_constraintVertical_bias="0.397" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/myText5"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <Switch
+        android:id="@+id/switch6"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:scaleX="1.0"
+        android:scaleY="1.0"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toEndOf="@+id/editTextText1"
+        app:layout_constraintTop_toBottomOf="@+id/btnLock"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <Switch
+        android:id="@+id/switch7"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:scaleX="1.0"
+        android:scaleY="1.0"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toEndOf="@+id/editTextText1"
+        app:layout_constraintTop_toBottomOf="@+id/btnLock"
+        app:layout_constraintVertical_bias="0.303" />
+
+    <EditText
+        android:id="@+id/editTextText7"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/myText5"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <EditText
+        android:id="@+id/editTextText8"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/myText4"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361" />
+
+    <Switch
+        android:id="@+id/switch8"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:scaleX="1.0"
+        android:scaleY="1.0"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toEndOf="@+id/editTextText1"
+        app:layout_constraintTop_toBottomOf="@+id/btnLock"
+        app:layout_constraintVertical_bias="0.083" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -112,7 +112,11 @@
         android:textSize="30dp"
         android:text="Нажимая сохранить\nвы соглашаетесть\nс политикой\nконфиденциальности\nприложения"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="486dp" />
+        tools:layout_editor_absoluteY="486dp"
+        style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
+        android:padding="12dp"
+        />
+
 
 
 

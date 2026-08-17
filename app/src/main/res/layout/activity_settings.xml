@@ -82,28 +82,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.471" />
 
-    <!-- Делает элемент похожим на кнопку, а не на обычный чекбокс -->
-    style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
-
-    <!-- Убирает стандартный маленький квадратик слева, если нужно -->
-    <!-- android:button="@null" -->
-
-    <!-- Внутренние отступы, чтобы кнопка выглядела аккуратно -->
-    android:padding="12dp" />
-
-
-
-
-
-    app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669" />
-
-
-    />
 
     <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/square_chip"

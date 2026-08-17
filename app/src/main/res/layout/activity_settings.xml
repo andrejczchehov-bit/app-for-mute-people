@@ -115,6 +115,7 @@
         tools:layout_editor_absoluteY="486dp"
         style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
         android:padding="12dp"
+        app:shapeAppearanceOverlay="@style/SquareCornerStyle"
         />
 
 

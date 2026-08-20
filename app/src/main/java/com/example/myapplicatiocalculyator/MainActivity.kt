@@ -19,8 +19,7 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import android.graphics.Color
-
-
+import com.google.android.material.checkbox.MaterialCheckBox
 
 
 class MainActivity : AppCompatActivity() {
@@ -48,6 +47,7 @@ class MainActivity : AppCompatActivity() {
                         mainLayout.visibility = View.VISIBLE
                     } else {
                         finish()
+
                     }
                 }
             }

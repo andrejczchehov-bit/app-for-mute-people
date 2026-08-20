@@ -85,18 +85,18 @@
 
     <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/square_chip"
+        style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
         android:layout_width="379dp"
         android:layout_height="143dp"
-        android:textSize="30dp"
-        android:text="Нажимая сохранить\nвы соглашаетесть\nс политикой\nконфиденциальности\nприложения"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="486dp"
-        style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
         android:padding="12dp"
-        app:shapeAppearanceOverlay="@style/SquareCornerStyle"
-        />
-
-
+        android:text="Нажимая сохранить\nвы соглашаетесть\nс политикой\nконфиденциальности\nприложения"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882"
+        app:shapeAppearanceOverlay="@style/SquareCornerStyle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

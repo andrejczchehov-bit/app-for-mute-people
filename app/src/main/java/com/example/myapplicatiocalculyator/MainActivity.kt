@@ -165,7 +165,7 @@ class MainActivity : AppCompatActivity() {
 
         )
 
-        val squareCheckBox = findViewById<MaterialCheckBox>(R.id.square_chip)
+        val squareCheckBox = findViewById<MaterialCheckBox>(R.id.square_ch)
         squareCheckBox.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 // Галочка появилась

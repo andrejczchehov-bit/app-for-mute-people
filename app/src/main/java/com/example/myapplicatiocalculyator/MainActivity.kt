@@ -53,9 +53,23 @@ class MainActivity : AppCompatActivity() {
             }
         )
 
+
+        val squareCheckBox = findViewById<MaterialCheckBox>(R.id.square_ch)
+        squareCheckBox.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                // Галочка появилась
+            } else {
+                // Галочка исчезла
+            }
+        }
+
+
         soundPool = SoundPool.Builder().setMaxStreams(5).build()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
 
 
 
@@ -165,14 +179,7 @@ class MainActivity : AppCompatActivity() {
 
         )
 
-        val squareCheckBox = findViewById<MaterialCheckBox>(R.id.square_ch)
-        squareCheckBox.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                // Галочка появилась
-            } else {
-                // Галочка исчезла
-            }
-        }
+
 
 
 

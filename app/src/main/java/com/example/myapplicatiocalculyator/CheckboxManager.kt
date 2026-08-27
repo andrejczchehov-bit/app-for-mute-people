@@ -6,6 +6,10 @@ class CheckboxManager(
     private val squareCheckBox: MaterialCheckBox
 ) {
 
+
+
+
+
     fun setup() {
         squareCheckBox.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {

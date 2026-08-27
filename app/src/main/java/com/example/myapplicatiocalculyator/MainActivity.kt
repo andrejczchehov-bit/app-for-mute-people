@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
 
         soundPool = SoundPool.Builder().setMaxStreams(5).build()
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
 
         val squareCheckBox = findViewById<MaterialCheckBox>(R.id.square_ch)

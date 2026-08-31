@@ -19,8 +19,7 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import android.graphics.Color
-
-
+import com.google.android.material.checkbox.MaterialCheckBox
 
 
 class MainActivity : AppCompatActivity() {
@@ -48,14 +47,22 @@ class MainActivity : AppCompatActivity() {
                         mainLayout.visibility = View.VISIBLE
                     } else {
                         finish()
+
                     }
                 }
             }
         )
 
+
+
+
+
         soundPool = SoundPool.Builder().setMaxStreams(5).build()
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+
+
+
 
 
 
@@ -164,6 +171,10 @@ class MainActivity : AppCompatActivity() {
             R.id.btn7, R.id.btn8, R.id.btn9
 
         )
+
+
+
+
 
         for (i in digitButtons.indices) {
             findViewById<Button>(digitButtons[i]).setOnClickListener {

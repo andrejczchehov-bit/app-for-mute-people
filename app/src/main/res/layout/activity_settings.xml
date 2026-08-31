@@ -81,4 +81,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.471" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip2"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
+
+
+    />
+
+    <TextView
+        android:id="@+id/myTextView2"
+        android:layout_width="304dp"
+        android:layout_height="91dp"
+        android:text="Нажимая сохранить\nвы соглашаетесть\nс политикой\nконфиденциальности\nприложения"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

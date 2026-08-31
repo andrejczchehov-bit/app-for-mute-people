@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.MyApplicatioCAlculyator" parent="Base.Theme.MyApplicatioCAlculyator" />
+
+        <style name="SquareCornerStyle">
+            <!-- Устанавливает радиус скругления всех углов в 0 -->
+            <item name="cornerSize">0dp</item>
+        </style>
+
 </resources>

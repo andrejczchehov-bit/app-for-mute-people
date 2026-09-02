@@ -28,17 +28,9 @@ class SettingsActivity : AppCompatActivity() {
             insets
         }
 
-        // Галочка согласия
-        val squareCheckBox = findViewById<MaterialCheckBox>(R.id.square_ch)
 
-        squareCheckBox.setOnCheckedChangeListener { _, isChecked ->
 
-            if (isChecked) {
-                // Галочка установлена
-            } else {
-                // Галочка снята
-            }
 
-        }
+
     }
 }

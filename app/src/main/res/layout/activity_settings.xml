@@ -80,26 +80,12 @@
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
-
-    <com.google.android.material.chip.Chip
-        android:id="@+id/chip2"
-        android:layout_width="54dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text=""
-
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669" />
+        app:layout_constraintVertical_bias="0.471" /><![CDATA[
 
 
     />
+
+    ]]>
 
     <TextView
         android:id="@+id/myTextView2"

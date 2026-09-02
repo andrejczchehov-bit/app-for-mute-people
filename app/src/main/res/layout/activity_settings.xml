@@ -80,12 +80,7 @@
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" /><![CDATA[
-
-
-    />
-
-    ]]>
+        app:layout_constraintVertical_bias="0.471" />
 
     <TextView
         android:id="@+id/myTextView2"

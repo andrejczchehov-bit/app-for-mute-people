@@ -92,7 +92,8 @@
         android:paddingRight="20dp"
         android:layout_marginRight="4dp"
         android:layout_marginTop="9dp"
-
+        android:scaleX="1.0"
+        android:scaleY="1.0"
         android:text="Нажимая сохранить\nвы соглашаетесть\nс политикой\nконфиденциальности\nприложения"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"

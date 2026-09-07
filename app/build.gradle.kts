@@ -18,11 +18,12 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-        buildFeatures{
-        val veiwBinding = null
-            veiwBinding; true
+    buildFeatures {
+        viewBinding = true
+    }
 
-        }
+
+
     buildTypes {
 
         release {

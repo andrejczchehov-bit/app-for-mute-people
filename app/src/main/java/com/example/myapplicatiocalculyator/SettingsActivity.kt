@@ -6,8 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.checkbox.MaterialCheckBox
+import edu.kiet.calculator.databinding.ActivityCheckBoxBinding
 
-var
+var checkBoxBinding:ActivityCheckBoxBinding
 class SettingsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -19,7 +19,8 @@ android {
     }
 
         buildFeatures{
-        veiwBinding true
+        val veiwBinding = null
+            veiwBinding true
 
         }
     buildTypes {

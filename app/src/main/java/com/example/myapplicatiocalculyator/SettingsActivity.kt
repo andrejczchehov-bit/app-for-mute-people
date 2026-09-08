@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.checkbox.MaterialCheckBox
-import edu.kiet.calculator.databinding.ActivityCheckBoxBinding
+import com.example.myapplicatiocalculyator.databinding.ActivityCheckBoxBinding
 
 var checkBoxBinding:ActivityCheckBoxBinding
 class SettingsActivity : AppCompatActivity() {

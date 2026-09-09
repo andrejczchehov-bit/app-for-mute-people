@@ -66,7 +66,23 @@ class MainActivity : AppCompatActivity() {
 
 
 
+        val button = findViewById<Button>(R.id.buttonClick)
+        val textView = findViewById<TextView>(R.id.textViewResult)
 
+        // Обработка нажатия на кнопку
+        button.setOnClickListener {
+            // Получаем текущие дату и время
+            val currentDate = Date()
+
+            // Задаем формат (день.месяц.год часы:минуты:секунды)
+            val formatter = SimpleDateFormat("dd.MM.yyyy HH:mm:ss", Locale.getDefault())
+
+            // Превращаем дату в строку
+            val formattedDate = formatter.format(currentDate)
+
+            // Выводим текст в TextView
+            textView.text = "Нажато: $formattedDate"
+        }
 
 
 

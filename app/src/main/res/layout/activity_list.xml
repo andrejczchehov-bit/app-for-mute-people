@@ -33,17 +33,7 @@
 
         <!-- Кнопка -->
 
-    </LinearLayout><![CDATA[
-
-
-
-    />
-
-
-
-
-
-    ]]>
+    </LinearLayout>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

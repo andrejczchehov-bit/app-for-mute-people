@@ -17,10 +17,15 @@
         android2:layout_width="match_parent"
         android2:orientation="vertical"
         android2:padding="16dp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="64dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <!-- Текстовое поле для вывода времени -->
+
+        <!-- Кнопка -->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="126dp"
@@ -30,9 +35,6 @@
             android2:layout_width="wrap_content"
             android2:text="Здесь появится дата и время"
             android2:textSize="18sp" />
-
-        <!-- Кнопка -->
-
     </LinearLayout>
 
     <androidx.appcompat.widget.Toolbar
@@ -100,8 +102,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576" />
-
-    />
-
+        app:layout_constraintVertical_bias="0.891" />
 </androidx.constraintlayout.widget.ConstraintLayout>

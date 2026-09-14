@@ -19,7 +19,10 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import android.graphics.Color
-
+import com.google.android.material.checkbox.MaterialCheckBox
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 
 
@@ -48,14 +51,38 @@ class MainActivity : AppCompatActivity() {
                         mainLayout.visibility = View.VISIBLE
                     } else {
                         finish()
+
                     }
                 }
             }
         )
 
+
+
+
+
         soundPool = SoundPool.Builder().setMaxStreams(5).build()
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+
+
+        val button = findViewById<Button>(R.id.buttonClick)
+        val textView = findViewById<TextView>(R.id.textViewResult)
+
+        // Обработка нажатия на кнопку
+        button.setOnClickListener {
+            // Получаем текущие дату и время
+            val currentDate = Date()
+
+            // Задаем формат (день.месяц.год часы:минуты:секунды)
+            val formatter = SimpleDateFormat("dd.MM.yyyy HH:mm:ss", Locale.getDefault())
+
+            // Превращаем дату в строку
+            val formattedDate = formatter.format(currentDate)
+
+            // Выводим текст в TextView
+            textView.text = "Нажато: $formattedDate"
+        }
 
 
 
@@ -164,6 +191,10 @@ class MainActivity : AppCompatActivity() {
             R.id.btn7, R.id.btn8, R.id.btn9
 
         )
+
+
+
+
 
         for (i in digitButtons.indices) {
             findViewById<Button>(digitButtons[i]).setOnClickListener {

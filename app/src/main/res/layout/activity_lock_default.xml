@@ -203,7 +203,7 @@
         app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toEndOf="@+id/editTextText1"
         app:layout_constraintTop_toBottomOf="@+id/btnLock"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <EditText
         android:id="@+id/editTextText2"
